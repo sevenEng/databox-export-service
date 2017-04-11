@@ -20,7 +20,7 @@ RUN sudo apk add alpine-sdk bash ncurses-dev \
  && cd databox-export-service \
  && sudo chmod +x install.sh && sync \
  && ./install.sh \
- && sudo apk del alpine-sdk fbash ncurses-dev \
+ && sudo apk del alpine-sdk bash ncurses-dev \
  && sudo apk del opam
 
 EXPOSE 8080
